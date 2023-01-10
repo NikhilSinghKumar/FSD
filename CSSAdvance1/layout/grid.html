@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layout: Grid</title>
+    <style>
+
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: 100px 100px 100px; */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            /* grid-template-rows: 80px 200px; */
+            /* justify-content: space-evenly; */
+            row-gap: 5px;
+            column-gap: 50px;
+            background-color: blue;
+            padding: 10px;
+        }
+        .grid-item{
+             background-color: lightgrey;
+             border: 1px solid black;
+             padding: 10px;
+             text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid</h1>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+</html>
+<!--fr: fractions; in grid preference given to fr than px-->

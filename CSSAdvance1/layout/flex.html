@@ -1,0 +1,66 @@
+<!--layout: how the elements are arranged/positioning-->
+<!-- flex: one dimension: either row or column;
+grid: 2D: row & column;
+Four layouts before grid & flex:
+1. block: sections, containers;
+2. inline: for texts, inline contents;
+3. table: 2d table data;
+4. positions ;-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS layouts: Flex</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: grey;
+            justify-content: center;
+        }
+        .flex-container > div {
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            font-size: 26px;
+             
+        }
+    </style>
+</head>
+<body>
+
+         <!--to define a flex container-->
+     <!--flex layout must have a parent element with display property of value flex-->
+     <!--direct child elements of the flexible container automatically become flx items or flexible-->
+     <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+     </div>
+     
+    <!-- <table>
+        <tr>
+            <th>Student Name</th>
+            <th>Roll No.</th>
+            <th>Stream</th>
+        </tr>
+        <tr>
+            <td>Nikhil</td>
+            <td>060</td>
+            <td>Comm</td>
+        </tr>
+        <tr>
+            <td>Kumar</td>
+            <td>061</td>
+            <td>Engg</td>
+        </tr>
+        <tr>
+            <td>Ankit</td>
+            <td>062</td>
+            <td>Arts</td>
+        </tr>
+    </table>
+     -->
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Animation</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .parent {
+                background-color: skyblue;
+                width: 405px;
+                height: 405px;
+            }
+            .circle {
+                background-color: green;
+                position: relative;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid rgb(206, 41, 41);
+                /* animation-name: change-color; */
+                /* animation-duration: 12s; */
+                /* animation-delay: 3s; */
+                /* animation-iteration-count: 2; */
+                /* animation-iteration-count: infinite; */
+                /* animation-direction: alternate; */
+                /* animation-timing-function: ease-in-out; */
+                /* animation-timing-function: cubic-bezier(0.77,-0.4, 0.1, 1.21); */
+                animation: change-color 12s ease-in-out 3s infinite alternate;
+            }
+            /* @keyframes  change-color {
+                from {background-color: green;}
+                to {background-color: rgb(206, 41, 41);}
+            } */
+            /* @keyframes change-color {
+                0% {background-color: green;}
+                25% {background-color: yellow;}
+                50% {background-color: orange;}
+                75% {background-color: orangered;}
+                100% {background-color: rgb(218, 37, 37);}
+            } */
+            @keyframes change-color {
+                0% {background-color: green; left: 0; top: 0;}
+                25% {background-color: yellow; left: 300px; top: 0;}
+                50% {background-color: orange; left: 300px; top: 300px;}
+                75% {background-color: orangered; left: 0; top: 300px;}
+                100% {background-color: rgb(218, 37, 37); left: 0; top: 0;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Animation</h1>
+        <div class="parent">
+            <div class="circle"></div>
+        </div>
+    </body>
+</html>

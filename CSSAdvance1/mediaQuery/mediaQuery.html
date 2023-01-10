@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Media Query</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: rgb(32, 170, 255);
+            }
+            img {
+                width: 900px;
+            }
+             /* @media screen and (min-width:550px) {
+                body {
+                    background-color: rgb(84, 42, 121);
+                    color: white;
+                }
+            } */
+            @media screen and (max-width:1100px) {
+                img {
+                    width: 730px;
+                }
+            }
+            @media screen and (max-width:740px) {
+                img {
+                    width: 550px;
+                }
+            }
+            @media screen and (max-width:550px) {
+                img {
+                    width: 300px;
+                }
+            }
+            @media screen and (max-width:300px) {
+                img {
+                    width: 200px;
+                }
+            }
+        </style> 
+    </head>
+    <body>
+        <h1>Media Query: for Responsiveness</h1>
+        <h3>Amazing tedchnique for giving styles to different screen sizes.</h3>
+        <hr><hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum, sit eveniet, commodi nisi quos unde, quidem hic voluptate ab quod velit. Consequatur ex odio id! Ad illum beatae iure?</p>
+        
+        <!-- image used as container: media query for conatiner size responsiveness. Image csn be made responsive using %, em-->
+        <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&w=1000&q=80">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti ipsa maxime excepturi aliquam rerum labore, omnis neque eum dolorum placeat. Cum odio explicabo dolores facilis possimus porro impedit fugit.</p>
+    </body>
+</html>
