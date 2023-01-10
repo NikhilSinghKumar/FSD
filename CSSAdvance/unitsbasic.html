@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Units in CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <style>
+      .rectangle {
+        background-color: blueviolet;
+        height: 60px;
+        display: flex;
+        align-items: center;
+      }
+      /* .parent {
+        width: 230px;
+        border: 1px solid black;
+      }
+      .one-hundred-pixels {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      .fifty-percent {
+        width: 50%;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Units in CSS</h1>
+    <div>
+      <p>px, em: element, rem: root element</p>
+      <p>%, vw: viewport width, vh: viewport height</p>
+      <p>Absolute units: px (just fixed). not dependent on any other element</p>
+      <p>
+        Relative units (provides some kind of responsiveness): em, rem, %, vw,
+        vh
+      </p>
+      <ul>
+        <li>px: consistent size irrespective of screen size;</li>
+        <li>em: Relative to its parent element;</li>
+        <li>rem: Relative to the root element (html tag);</li>
+        <li>vw, vh: relative to Viewport (available space on screen);</li>
+        <li>%: relative to its parent element;</li>
+      </ul>
+      <strong>Most Browsers, default font-size: 16px</strong>
+      <ul>
+        <li>html: 16px;</li>
+        <li>1em: 16px;</li>
+        <li>1rem: 16px;</li>
+        <li>100%: 16px;</li>
+      </ul>
+    </div>
+  </body>
+</html>

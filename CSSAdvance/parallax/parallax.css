@@ -1,0 +1,62 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-weight: 300;
+    color: gray;
+    line-height: 1.8rem;
+    letter-spacing: 0.2rem;
+}
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 90%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.pimg1 {
+    background-image: url(https://thumbs.dreamstime.com/b/yellow-textured-plain-background-wallpaper-design-use-text-image-yellow-textured-plain-background-wallpaper-137515345.jpg); min-height: 15%;
+}
+
+.pimg2 {
+    background-image: url(https://4kwallpapers.com/images/wallpapers/macos-monterey-stock-blue-light-layers-5k-2880x1800-5898.jpg); min-height: 50%;
+}
+
+.pimg3 {
+    background-image: url(https://cdn.wallpapersafari.com/77/94/XyhlVn.jpg); min-height: 50%;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: white;
+    color: black;
+}
+
+.section-dark {
+    background-color: black;
+    color: white;
+}
+
+.border {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}

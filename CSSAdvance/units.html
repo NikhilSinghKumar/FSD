@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Units in CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .rectangle {
+                background-color: aqua;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            /* .parent {
+                width: 400px;
+                border: 1px solid black;
+            } */
+            /* .one-hundred-pixels {
+                width: 100px;
+                
+            }
+            .fifty-percent {
+                width: 50%;
+            } */
+            
+            .fifty-viewport-width {
+                width: 30vw;
+            }
+            .fifty-percent {
+                width: 50%;
+            }
+            .father {
+                width: 200px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Units in CSS</h1>
+        
+        <!-- <div class="rectangle one-hundred-pixels">Hundred Pixels</div>
+        <div class="rectangle fifty-percent">Fifty Percent</div>
+        <div class="parent">
+            <div class="rectangle one-hundred-pixels">Hundred Pixels</div>
+            <div class="rectangle fifty-percent">Fifty Percent</div>
+        </div> -->
+
+        <div class="rectangle fifty-viewport-width">fifty-viewport-width</div>
+        <div class="rectangle fifty-percent">fifty-percent</div>
+        <div class="father">
+            <div class="rectangle fifty-viewport-width">fifty-viewport-width</div>
+            <div class="rectangle fifty-percent">fifty-percent</div>
+        </div>
+    </body>
+</html>
