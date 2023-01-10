@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <!-- Static position: by default to all elements, normal flow of webpage. static postion element have no effect on top, right, left, bottom properties-->
+    <!-- Relative position: in refrence to normal position -->
+    <!-- absolute: position: it is positioned relative to the nearest position ancestor and if not positioned ancestor then uses viewport or body element as the parent. Use: when we want one element top of other-->
+    <!--position fixed: always related to the position of viewport-->
+    <style>
+        .parent {
+            
+            background-color: rgb(221, 124, 140);
+            padding-bottom: 10px;
+            position: relative;
+            height: 100vh;
+        }
+        .parent:hover {
+            margin-top: 300px;
+        }
+        .child {
+            width: 90%;
+            height: 40px;
+            margin: 10px;
+        }
+        .child-one {
+            background-color: yellow;
+            /* position: relative;
+            left: 20px; */
+            position: absolute;
+            top: 20px;
+            width: 100px;
+            /* position: fixed; */
+        }
+        .child-two {
+            background-color: rgb(165, 224, 46);
+        }
+        .child-three {
+            background-color: rgb(92, 119, 38);
+        }
+    </style>
+</head>
+<body>
+    <h1>Position in CSS</h1>
+    <div class="parent">
+        parent
+        
+        <div class="child child-one">one</div>
+        <div class="child child-two">two</div>
+        <div class="child child-three">three</div>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>

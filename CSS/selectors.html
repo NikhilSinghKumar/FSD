@@ -1,0 +1,122 @@
+<!-- Combination of selectors: name/tag, id, class -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <!-- * for universal selector (target full html page) -->
+    <style>
+        /* * {
+            color: white;
+            background-color: black;
+        }
+        div {
+            color: black;
+            background-color: white;
+            height: 40px;
+            width: fit-content;
+        }
+        li {
+            background-color: rebeccapurple;
+            width: 110px;
+        }
+        .green {
+            background-color: red;
+            width: 170px;
+        }
+        #iti {
+            color: black;
+            background-color: white;
+            width: 150px;
+        } */
+        /* li.brown {
+            background-color: greenyellow;
+        } */
+        span.green.text-red {
+            background-color: goldenrod;
+        }
+        /* span, li{
+            background-color: darkorange;
+        } */
+
+        /* ol li {
+            background-color: chartreuse;
+        } */
+        /* p>strong {
+            background-color: rgb(35, 201, 35);
+        } */
+        
+        /* li.green ~ li {
+            
+            background-color:blue;
+        } */
+
+        /* li.green + li {
+            background-color: brown;
+        }  */
+        /* li.green + li.yep {
+            background-color: yellow;
+        } */
+        li:hover {
+            background-color: skyblue;
+            width: fit-content;
+        }
+
+        /* input:focus {
+            background-color: lightgrey;
+        } */
+        input:required {
+            background-color: rgb(235, 125, 125);
+        }
+        /* li:first-child {
+            background-color: lightslategray;
+            
+        } */
+        /* li:nth-child(2n) {
+            background-color: lightslategray;
+            
+        } */
+        /* li:nth-child(odd) {
+            background-color: rgb(128, 160, 192);
+            
+        } */
+        li:last-child {
+            background-color: rgb(128, 160, 192);
+        }
+        span:only-child {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <!--p is nested child of div -->
+            <strong>This is nested text</strong><br><br>
+            <input required>
+        </p>
+    </div>
+    <div>
+        <span>This is only child of div.</span>
+    </div><br>
+    <div>
+        <span>This is first child.</span>
+        <span>This is second child.</span>
+        <span>This is not the only child of div.</span>
+    </div>
+    <div>This is a div element. I will expand.</div>
+    <!-- li is direct child of ol-->
+    <ol>
+        <!-- ~ tildey targets elements after on which applied-->
+        <!-- + targets next element direct sibling-->
+        <li class="green">this is item 1</li>
+        <li id="iti" class="yep">this is item 2</li>
+        <li class="red">this is item 3</li>
+        <li>this is item 4</li>
+        <li class="brown">this is item 5</li>
+        <li >this is item 6</li>
+    </ol>
+    <span class="green text-red"> This is CSS tutorial</span>
+</body>
+</html>
