@@ -1,0 +1,175 @@
+<!-- HTML Template to follow everytime -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Web Page</title>
+    <meta charset="UTF-8"/> <!--UTF-8(char encoding): converts language we wrtite to binary-->
+    <!-- meta tag: char encoding, info about HTML, Keywords, SEO, Web page description on Serach Engine-->
+    <meta name="description" content="HTML Tutorial" />
+    <meta name="keywords" content="html, Backend, Frontend, CSS" />
+    <meta name="author" content="Nikhil" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- styling is CSS Part -->
+    <style>
+        div {
+            background-color: aqua;
+        }
+
+        span {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML formatting -->
+    <h1> This is My Heading</h1>
+    <img src="https://picsum.photos/600/200" alt="jpeg"/>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+       Quia tempore magni dolorem explicabo assumenda quis deserunt ducimus in perferendis minima? 
+       Placeat quibusdam mollitia obcaecati eaque voluptatem? Repellat aperiam itaque distinctio.
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br><br> 
+       Quia tempore magni dolorem explicabo assumenda quis deserunt ducimus in perferendis minima? 
+       Placeat quibusdam mollitia obcaecati eaque voluptatem? Repellat aperiam itaque distinctio.
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+       Quia tempore magni dolorem explicabo assumenda quis deserunt ducimus in perferendis minima? 
+       Placeat quibusdam mollitia obcaecati eaque voluptatem? Repellat aperiam itaque distinctio.
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+       Quia tempore magni dolorem explicabo assumenda quis deserunt ducimus in perferendis minima? 
+       Placeat quibusdam mollitia obcaecati eaque voluptatem? Repellat aperiam itaque distinctio.
+    </p>
+    <hr> <!-- horizontal line: self closing tag-->
+
+    <br>
+    <b>This is Bold.</b> <br>
+    <strong>This is Strong. Strong is more important for HTML than Bold.</strong> <br> <!-- Strong Command is importsnt for HTML not Bold-->
+    <i>This is italic.</i> <br>
+    <em>This is emphasized. Emphasized is prioritized by HTML than Italic.</em> <br>
+    This is a normal text. <br>
+    <small> This is smaller text. </small> <br>
+    <p>Today I started My <mark>Coding Job</mark> with very very <mark>handsome salary</mark> package.</p>
+    <p> This is a <del> deleted </del> text.</p>
+    <s> This is dele text. </s>
+    <p><ins> This is an underlined text. </ins></p> <!-- ins tag for underline-->
+    <u> This is an underlined text. </u>
+    <p>H<sub>2</sub>O</p> <!-- sub tag for subscript-->
+    <p>4<sup>2</sup>=16</p> <!--superscript-->
+
+    <!-- list items -->
+    <ul>  <!-- unordered list -->
+        <li> Banana </li>
+        <li> Grapes </li>
+        <li> Orange </li>
+    </ul>
+
+    <ol>  <!-- ordered list -->
+        <li> Banana </li>
+        <li> Grapes </li>
+        <li> Orange </li>
+    </ol>
+    <ol>  <!-- nested list -->
+        <li> Banana </li>
+        <ul> 
+            <li> Banana Shake </li>
+            <li> Banana Chips </li>
+        </ul>
+        <li> Grapes </li>
+        <ul> 
+            <li> Grapes Wine </li>
+            <li> Grapes Champagne </li>
+        </ul>
+        <li> Orange </li>
+    </ol>
+    
+    <!-- div/span elements: Container elements-->
+    <!-- Block Span-->
+    <div> Block Span </div> <!-- always starts with new line-->
+    <div> Div element </div>
+
+    <!-- Inline Span-->
+    <span> Inline Span </span>
+    <span> Hi Everyone </span>
+    
+    <br><br>
+    <!-- FORMS-->
+
+    <form>
+        <h3>Fill the FORM</h3>
+        <label>
+            First Name <input>
+        </label> <br><br>
+        <label>
+            Last Name <input>
+        </label> <br><br>
+        <label>
+            Email <input>
+        </label> <br><br>
+
+        <label>Mobile No</label> <br>
+        <input> <br><br>
+
+        <label>Address</label> <br>
+        <input> <br><br>
+
+        <button>Submit</button>
+    </form> <br><br>
+
+    <form>
+        <label>User ID:</label>
+        <input type="text" placeholder="Enter User ID" maxlength="30"> (max 30 chars allowed)
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password"> <br><br>
+        
+        <label>DOB:</label>
+        <input type="date" /> <br><br>
+
+        <label>Email:</label>
+        <input type="email" /> <br><br>
+
+        <label>Mobile Number:</label>
+        <input type="number" maxlength="10" /> <br><br>
+
+        <!-- Select options: Radio/ Checkbox-->
+        <label>Icecream Flavour:</label>
+        <input type="radio" /> Chocolate
+        <input type="radio" /> Strawberry
+        <br><br>
+
+        <label> Hobbies </label>
+        <input type="checkbox" /> Singing
+        <input type="checkbox" /> Dancing
+        <input type="checkbox" /> Sports
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button> 
+        <br><br>
+
+        <!-- anchor tag-->
+        <a href="https://www.google.com/" target="_blank"> Visit Google </a> <br><br>
+        <a href="https://pixabay.com/images/search/nature/" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" 
+            alt="jpeg" width="300" height="200">
+        </a>
+
+
+    </form> <br><br>
+    
+    <!-- Embed YouTube Videos -->
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/WzQBAc8i73E" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br><br>
+    <video width="500" height="300" controls autoplay muted src="videoplayback.mp4" type="video/mp4"></video>
+    <!-- controls/autoplay/muted: are controls of video-->
+    <br><br>
+    
+    <!-- iframe-->
+    <iframe src=""> provide links of video/websites etc </iframe>
+    <br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>
+
