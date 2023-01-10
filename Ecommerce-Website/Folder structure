@@ -1,0 +1,5 @@
+Keep your Base folder as 'src' or 'root'.
+Any text file should be in 'src' or 'root'.
+Name of folder should be as simple as possible like CSS, Home, Product etc.
+Avoid nesting of folders.
+Keep separate files for HTML, CSS, JS.
