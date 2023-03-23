@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <style>
+        .title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Slide Show</h1>
+    
+    <img name='slide' width="600" height="400">
+    <script>
+        var i=0; // stat\rting point
+        var images = [] // empty array
+        var time= 2000;  // 2000ms: 2s
+        // image list
+        images[0]= 'https://thumbs.dreamstime.com/b/woman-praying-free-birds-to-nature-sunset-background-woman-praying-free-birds-enjoying-nature-sunset-99680945.jpg';
+
+        images[1]='https://media.istockphoto.com/id/1322104312/photo/freedom-chains-that-transform-into-birds-charge-concept.jpg?b=1&s=170667a&w=0&k=20&c=-Y0krB2nXoyozDi-ZwKLfE0eDABiDxvanB-qOGqH4GU=';
+
+        images[2]='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUVVxe6XVCgswqv-HLMMxnS2ktF4oGdU5NLRN85-MBvrMF9r9FhUM2fDe2EyM2AGGZ2O0&usqp=CAU';
+
+        images[3]='https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082__480.jpg';
+
+        function changeImage(){
+            document.slide.src=images[i];
+            if(i<images.length-1){
+                i++;
+            }
+            else{
+                i=0;
+            }
+            setTimeout("changeImage()", time);
+        }
+        window.onload= changeImage
+
+    </script>
+    
+</body>
+</html>
